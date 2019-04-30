@@ -30,7 +30,7 @@ public class BlueFilter extends Filter
             for(int x = 0; x < width; x++) {
                 Color pix = image.getPixel(x, y);
                 int avg = (pix.getBlue());
-                image.setPixel(x, y, new Color(avg, avg, 0));
+                image.setPixel(x, y, new Color(0, 0, avg));
             }
         }
     }
